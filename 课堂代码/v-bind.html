@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <img :src="image" alt="">
+    </div>
+    <script src="./vue.min.js"></script>
+    <script>
+        var vm = new Vue({
+            data: {
+                image: "https://img1.baidu.com/it/u=212151557,58644506&fm=26&fmt=auto&gp=0.jpg"
+            }
+        }).$mount("#app");
+    </script>
+</body>
+</html>
