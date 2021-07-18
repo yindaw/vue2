@@ -1,0 +1,34 @@
+<template>
+  <div>
+    <h1>App组件</h1>
+    <Pager />
+    <!-- 如果分数>=70, <h1>优</h1> -->
+    <!-- 如果分数>=60, <h1>良</h1> -->
+    <!-- 其他, <h1>差</h1> -->
+    <!-- <h1 v-if="score >= 70">优</h1>
+    <h2 v-else-if="score>=60">良</h2>
+    <h3 v-else>差</h3> -->
+    <p v-show="visible">something</p>
+    <button @click="visible= !visible">切换显示</button>
+  </div>
+</template>
+<script>
+import Pager from "./components/Pager.vue";
+export default {
+  components: {
+    Pager,
+  },
+  data() {
+    return {
+      // score: 30,
+      visible: true,
+    };
+  },
+};
+</script>
+<style scoped>
+.iconfont {
+  font-size: 26px;
+  color: red;
+}
+</style>
